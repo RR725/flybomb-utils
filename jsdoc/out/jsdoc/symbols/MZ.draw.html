@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		<title>MZ.draw | JsDoc Reference</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<meta name="mobileoptimized" content="0" />
+	
+
+
+
+
+		<link rel="stylesheet" href="../css/all.css" media="all" />
+		<link rel="stylesheet" href="../css/handheld.css" media="only screen and (max-width: 660px)" />
+		<link rel="stylesheet" href="../css/handheld.css" media="handheld" />
+		<link rel="stylesheet" href="../css/screen.css" media="screen and (min-width: 661px)" />
+
+
+
+
+
+
+		<link rel="stylesheet" href="../../../doc_template/dialog.css" media="all" />
+		<link rel="stylesheet" href="../../../doc_template/draw.css" media="all" />
+		<link rel="stylesheet" href="../../../doc_template/dropmenu.css" media="all" />
+		<link rel="stylesheet" href="../../../doc_template/tipmessage.css" media="all" />
+		<link rel="stylesheet" href="../../../doc_template/tree.css" media="all" />
+
+
+
+
+
+		<script src="../javascript/all.js"></script>
+
+
+
+		<script src="../../../out/jsdoc/javascript/jquery.js"></script>
+		<script src="../../../doc_template/namespace.js"></script>
+		<script src="../../../doc_template/array.js"></script>
+		<script src="../../../doc_template/browser.js"></script>
+		<script src="../../../doc_template/cookie.js"></script>
+		<script src="../../../doc_template/date.js"></script>
+		<script src="../../../doc_template/dom.js"></script>
+		<script src="../../../doc_template/email.js"></script>
+		<script src="../../../doc_template/events.js"></script>
+		<script src="../../../doc_template/html.js"></script>
+		<script src="../../../doc_template/iframe.js"></script>
+		<script src="../../../doc_template/input.js"></script>
+		<script src="../../../doc_template/mobile.js"></script>
+		<script src="../../../doc_template/string.js"></script>
+		<script src="../../../doc_template/url.js"></script>
+		<script src="../../../doc_template/dialog.js"></script>
+		<script src="../../../doc_template/draw.js"></script>
+		<script src="../../../doc_template/dropmenu.js"></script>
+		<script src="../../../doc_template/tipmessage.js"></script>
+		<script src="../../../doc_template/tree.js"></script>
+		<script src="../../../lib/eve.js"></script>
+		<script src="../../../lib/raphael.js"></script>
+		<!--[if lt IE 9]>
+			<script src="../javascript/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+<div class="index">
+	<div class="menu">
+		<div class="indexLinks">
+			<a href="../index.html">Classes</a>
+			<a href="../files.html">Files</a>
+		</div>
+	
+		<h2 class="heading1">类</h2>
+		
+		<input type="text" name="classFilter" class="classFilter" id="ClassFilter" placeholder="Filter"></input>
+		
+		<nav>
+			<ul class="classList" id="ClassList">
+				
+					<li><a href="../symbols/_global_.html">_global_</a></li>
+				
+					<li><a href="../symbols/MZ.html">MZ</a></li>
+				
+					<li><a href="../symbols/MZ.array.html">MZ<span class='break'> </span>.<span class='break'> </span>array</a></li>
+				
+					<li><a href="../symbols/MZ.browser.html">MZ<span class='break'> </span>.<span class='break'> </span>browser</a></li>
+				
+					<li><a href="../symbols/MZ.browser.is.html">MZ<span class='break'> </span>.<span class='break'> </span>browser<span class='break'> </span>.<span class='break'> </span>is</a></li>
+				
+					<li><a href="../symbols/MZ.browser.support.html">MZ<span class='break'> </span>.<span class='break'> </span>browser<span class='break'> </span>.<span class='break'> </span>support</a></li>
+				
+					<li><a href="../symbols/MZ.cookie.html">MZ<span class='break'> </span>.<span class='break'> </span>cookie</a></li>
+				
+					<li><a href="../symbols/MZ.date.html">MZ<span class='break'> </span>.<span class='break'> </span>date</a></li>
+				
+					<li><a href="../symbols/MZ.dialog.html">MZ<span class='break'> </span>.<span class='break'> </span>dialog</a></li>
+				
+					<li><a href="../symbols/MZ.dom.html">MZ<span class='break'> </span>.<span class='break'> </span>dom</a></li>
+				
+					<li><a href="../symbols/MZ.draw.html">MZ<span class='break'> </span>.<span class='break'> </span>draw</a></li>
+				
+					<li><a href="../symbols/MZ.dropmenu.html">MZ<span class='break'> </span>.<span class='break'> </span>dropmenu</a></li>
+				
+					<li><a href="../symbols/MZ.email.html">MZ<span class='break'> </span>.<span class='break'> </span>email</a></li>
+				
+					<li><a href="../symbols/MZ.events.html">MZ<span class='break'> </span>.<span class='break'> </span>events</a></li>
+				
+					<li><a href="../symbols/MZ.html.html">MZ<span class='break'> </span>.<span class='break'> </span>html</a></li>
+				
+					<li><a href="../symbols/MZ.iframe.html">MZ<span class='break'> </span>.<span class='break'> </span>iframe</a></li>
+				
+					<li><a href="../symbols/MZ.input.html">MZ<span class='break'> </span>.<span class='break'> </span>input</a></li>
+				
+					<li><a href="../symbols/MZ.mobile.html">MZ<span class='break'> </span>.<span class='break'> </span>mobile</a></li>
+				
+					<li><a href="../symbols/MZ.string.html">MZ<span class='break'> </span>.<span class='break'> </span>string</a></li>
+				
+					<li><a href="../symbols/MZ.tipmessage.html">MZ<span class='break'> </span>.<span class='break'> </span>tipmessage</a></li>
+				
+					<li><a href="../symbols/MZ.tree.html">MZ<span class='break'> </span>.<span class='break'> </span>tree</a></li>
+				
+					<li><a href="../symbols/MZ.url.html">MZ<span class='break'> </span>.<span class='break'> </span>url</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	<div class="fineprint" style="clear:both">
+		<footer>
+			
+			Documentation generator: <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0<br />
+			Template: <a href="http://www.thebrightlines.com/2010/05/06/new-template-for-jsdoctoolkit-codeview/" target="_blank">Codeview</a> 1.2<br />
+			Generated on:
+			<time datetime='2015-4-29' pubdate>2015-4-29 10:37</time>
+		</footer>
+	</div>
+</div>
+
+<div class="index indexStatic"></div>
+
+<div class="content">
+	<div class="innerContent">
+		<article>
+			<header>
+				<h1 class="classTitle">
+					
+					Namespace <span>MZ.draw</span>
+				</h1>
+				
+				<div class="intro">
+					<p class="description summary">
+						
+					</p>
+						
+					
+						<ul class="summary">
+							
+							
+							
+								<li>Defined in: <a href="../symbols/src/E__GitHome_git_node_jsdoc_doc_template_draw.js.html">draw.js</a></li>
+							
+							
+						</ul>
+					
+				</div>
+			</header>
+			
+			
+			
+			
+	<!--
+	#### METHODS SUMMARY
+	-->
+			
+				<section>
+					
+					
+					<div class="props">
+						<h2 class="sectionTitle">方法列表</h2>
+						
+						
+							<nav>
+								<table class="summaryTable" id="MethodsList" cellspacing="0" summary="A summary of the methods documented in the class MZ.draw.">
+									<thead>
+										<tr>
+											<th scope="col">方法类型</th>
+											<th scope="col">方法描述</th>
+										</tr>
+									</thead>
+									
+									<tbody>
+										
+										
+											<tr
+												 class='item0'
+											>
+												<td class="attributes">&lt;static&gt; &nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont">MZ.draw.<b><a href="../symbols/MZ.draw.html#.clickEvent">clickEvent</a></b>(dom, i, options)
+													</div>
+													<div class="description">点击事件，重新执行render绘制结构图</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item1'
+											>
+												<td class="attributes">&lt;static&gt; &nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont">MZ.draw.<b><a href="../symbols/MZ.draw.html#.createEle">createEle</a></b>(pos, json, options)
+													</div>
+													<div class="description">生成结构图的每一层，并返回层里的每一个</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item2'
+											>
+												<td class="attributes">&lt;static&gt; &nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont">MZ.draw.<b><a href="../symbols/MZ.draw.html#.firstPos">firstPos</a></b>(options)
+													</div>
+													<div class="description">根据options.type的值判断是横向还是纵向，得到第一个节点的位置</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item3'
+											>
+												<td class="attributes">&lt;static&gt; &nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont">MZ.draw.<b><a href="../symbols/MZ.draw.html#.getCoordinate">getCoordinate</a></b>(startObj, endObj, type)
+													</div>
+													<div class="description">得到要绘制的路径坐标</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item4'
+											>
+												<td class="attributes">&lt;static&gt; &nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont">MZ.draw.<b><a href="../symbols/MZ.draw.html#.getPath">getPath</a></b>(startObj, endObj, line, bg, options)
+													</div>
+													<div class="description">画线，得到初始位置和结束位置，中间加一个弧度美化</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item5'
+											>
+												<td class="attributes">&lt;static&gt; &nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont">MZ.draw.<b><a href="../symbols/MZ.draw.html#.pushShapes">pushShapes</a></b>(options, init)
+													</div>
+													<div class="description">得到shapes的DOM数组，用于点击DOM和移除DOM操作</div>
+												</td>
+											</tr>
+										
+											<tr
+												 class='item6'
+											>
+												<td class="attributes">&lt;static&gt; &nbsp;</td>
+												<td class="nameDescription">
+													<div class="fixedFont">MZ.draw.<b><a href="../symbols/MZ.draw.html#.render">render</a></b>(options, init)
+													</div>
+													<div class="description">初始化</div>
+												</td>
+											</tr>
+										
+									</tbody>
+								</table>
+							</nav>
+						
+					
+						
+					</div>
+				</section>
+			
+			
+	<!--
+	#### EVENTS SUMMARY
+	-->
+			
+	<!--
+	#### CONSTRUCTOR DETAILS
+	-->
+			
+	<!--
+	#### FIELD DETAILS
+	-->
+			
+	<!--
+	#### METHOD DETAILS
+	-->		
+			
+				<section>
+					<div class="details props">
+						<div class="innerProps">
+							<h2 class="sectionTitle">
+								方法详细说明
+							</h2>
+							
+							<ul class="methodDetail" id="MethodDetail">
+								
+								
+									<li 
+										 class='item0'
+									>
+										<div class="fixedFont heading" id=".clickEvent">
+											<span class='lighter'>
+											&lt;static&gt; 
+											</span>
+											
+											
+											
+											<span class="light">MZ.draw.</span><b>clickEvent</b>(dom, i, options)
+										</div>
+										
+										<div class="description">
+											点击事件，重新执行render绘制结构图
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>dom</b>
+														
+													</dt>
+													<dd>当前点击的DOM</dd>
+												
+													<dt>
+														<span class="light fixedFont">{Number}</span> <b>i</b>
+														
+													</dt>
+													<dd>当前点击的DOM节点是第几个</dd>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>options</b>
+														
+													</dt>
+													<dd>结构图参数集合</dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item1'
+									>
+										<div class="fixedFont heading" id=".createEle">
+											<span class='lighter'>
+											&lt;static&gt; 
+											</span>
+											
+											
+											
+											<span class="light">MZ.draw.</span><b>createEle</b>(pos, json, options)
+										</div>
+										
+										<div class="description">
+											生成结构图的每一层，并返回层里的每一个
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>pos</b>
+														
+													</dt>
+													<dd>单个节点的x坐标，y坐标</dd>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>json</b>
+														
+													</dt>
+													<dd>单个节点内要显示的内容</dd>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>options</b>
+														
+													</dt>
+													<dd>结构图参数集合</dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item2'
+									>
+										<div class="fixedFont heading" id=".firstPos">
+											<span class='lighter'>
+											&lt;static&gt; 
+											</span>
+											
+											
+											
+											<span class="light">MZ.draw.</span><b>firstPos</b>(options)
+										</div>
+										
+										<div class="description">
+											根据options.type的值判断是横向还是纵向，得到第一个节点的位置
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>options</b>
+														
+													</dt>
+													<dd>结构图参数集合</dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item3'
+									>
+										<div class="fixedFont heading" id=".getCoordinate">
+											<span class='lighter'>
+											&lt;static&gt; 
+											</span>
+											
+											
+											
+											<span class="light">MZ.draw.</span><b>getCoordinate</b>(startObj, endObj, type)
+										</div>
+										
+										<div class="description">
+											得到要绘制的路径坐标
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>startObj</b>
+														
+													</dt>
+													<dd>路径开始的节点</dd>
+												
+													<dt>
+														<span class="light fixedFont">{Number}</span> <b>endObj</b>
+														
+													</dt>
+													<dd>路径结束的节点</dd>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>type</b>
+														
+													</dt>
+													<dd>结构图的类型，横向展示(type===2)or纵向展示(type===1)</dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item4'
+									>
+										<div class="fixedFont heading" id=".getPath">
+											<span class='lighter'>
+											&lt;static&gt; 
+											</span>
+											
+											
+											
+											<span class="light">MZ.draw.</span><b>getPath</b>(startObj, endObj, line, bg, options)
+										</div>
+										
+										<div class="description">
+											画线，得到初始位置和结束位置，中间加一个弧度美化
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>startObj</b>
+														
+													</dt>
+													<dd>初始位置的DOM</dd>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>endObj</b>
+														
+													</dt>
+													<dd>结束位置的DOM</dd>
+												
+													<dt>
+														<span class="light fixedFont">{String}</span> <b>line</b>
+														
+													</dt>
+													<dd>线颜色</dd>
+												
+													<dt>
+														<span class="light fixedFont">{String}</span> <b>bg</b>
+														
+													</dt>
+													<dd>边框颜色</dd>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>options</b>
+														
+													</dt>
+													<dd>结构图参数集合</dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item5'
+									>
+										<div class="fixedFont heading" id=".pushShapes">
+											<span class='lighter'>
+											&lt;static&gt; 
+											</span>
+											
+											
+											
+											<span class="light">MZ.draw.</span><b>pushShapes</b>(options, init)
+										</div>
+										
+										<div class="description">
+											得到shapes的DOM数组，用于点击DOM和移除DOM操作
+											
+											
+											
+											
+										</div>
+										
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>options</b>
+														
+													</dt>
+													<dd>结构图参数集合</dd>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>init</b>
+														
+													</dt>
+													<dd>判断是否第一次初始化，需要加上一个根节点</dd>
+												
+											</dl>
+										
+										
+										
+										<div class="hr"></div>
+									</li>
+								
+									<li 
+										 class='item6'
+									>
+										<div class="fixedFont heading" id=".render">
+											<span class='lighter'>
+											&lt;static&gt; 
+											</span>
+											
+											
+											
+											<span class="light">MZ.draw.</span><b>render</b>(options, init)
+										</div>
+										
+										<div class="description">
+											初始化
+											
+											
+											
+											
+										</div>
+										
+										
+											
+												<pre class="code">
+             var options = {
+                dom: 'holder',
+                domHeight: 1480,
+                width: 200, //单个节点宽度
+                height: 66, //单个节点高度
+                index: 0, //当前选中的是第几个
+                lineColor: '#ccc', //路径的颜色
+                lineBgColor: '#fff', //路径的背景色
+                type: 2, //2：横着排    1：竖着排
+                maxLevel:4,//最大层级，超过该值点击不会再生成新的层级
+                url: '../../../test_data/draw.json', //ajax请求的url
+                //linear:true,//直线
+                marginLeft: 260, //节点的左右间距
+                marginTop: 20, //节点的上下间距
+                callback: function(data) { //回调函数，拿到接口返回的数据生成html模板
+                    var text = data.text;
+                    text = MZ.string.getTextOverFlow2(text, 52, '...');
+                    data.text = text;
+                    var html = [
+                        '<div class="tit">{percent}</div>',
+                        '<div class="con">{text}</div>'
+                    ].join('');
+                    html = MZ.string.format(html, data);
+                    return html;
+                },
+                postData: { //ajax请求需要的参数
+                    dataid: 444,
+                    type: 55
+                },
+                initData: { //生成dom结构要用到的数据
+                    text: 'http://www.meizu.com/products/meilan/fun.html',
+                    percent: '33%'
+                }
+            };
+            <script>
+                var optionsTest = {
+                dom: 'holder',
+                domHeight: 588,
+                width: 200, //单个节点宽度
+                height: 66, //单个节点高度
+                index: 0, //当前选中的是第几个
+                lineColor: '#ccc', //路径的颜色
+                lineBgColor: '#fff', //路径的背景色
+                type: 1, //2：横着排    1：竖着排
+                maxLevel:3,//最大层级，超过该值点击不会再生成新的层级
+                url: '../../../test_data/draw.json', //ajax请求的url
+                //接口返回的数据{"code":"200","value":{"data":[{"text": "http://www.sogou.com/sie?hdq=AQxRG-3354&query=12306%CC%FA%C2%B7%BF%CD%BB%A7%B7%FE%CE%F1%D6%D0%D0%C4&p=99350103&sourceid=sugg&w=01015004&oq=123&ri=0","percent": "50%","dataid":"123","type":"fsf"},{"text": "http://www.meizu.com/products/meilan/fun.html","percent": "20%","dataid":"423","type":"gfgfg"},{"text": "https://member.meizu.com/sso?appuri=http%3A%2F%2Fwww.meizu.com%2Faccounts%2Flogin&useruri=http%3A%2F%2Fwww.meizu.com%2Fproducts%2Fmeilan%2Ffun.html&sid=&service=www&autodirct=true","percent": "10%","dataid":"243","type":"gdsd"},{"text": "http://bbs.meizu.cn/thread-5600058-1-1.html","percent": "5%","dataid":"453","type":"few"},{"text": "http://bbs.flyme.cn/thread-244926-1-1.html","percent": "3%","dataid":"564","type":"hew"},{"text": "http://retail.meizu.com/join.html","percent": "2%","dataid":"985","type":"gad"}]},"message":""}
+                //linear:true,//直线
+                marginLeft: 40, //节点的左右间距
+                marginTop: 120, //节点的上下间距
+                callback: function(data) { //回调函数，拿到接口返回的数据生成html模板
+                    var text = data.text;
+                    text = MZ.string.getTextOverFlow2(text, 52, '...');
+                    data.text = text;
+                    var html = [
+                        '<div class="tit">{percent}</div>',
+                        '<div class="con">{text}</div>'
+                    ].join('');
+                    html = MZ.string.format(html, data);
+                    return html;
+                },
+                postData: { //ajax请求需要的参数
+                    dataid: 444,
+                    type: 55
+                },
+                initData: { //生成dom结构要用到的数据
+                    text: 'http://www.meizu.com/products/meilan/fun.html',
+                    percent: '33%'
+                }
+            };
+            function draw(type){
+                var href=window.location.href;
+                MZ.dialog.base({
+                    content: '<div id="dialogCon"><div id="holder" style="height:588px; position:relative; "></div></div>',
+                    title: '路径分析图',
+                    height:620,
+                    width:1700,
+                    type:'confirm',
+                    fnSure: function(dialog,rdm) {
+                        dialog.close(rdm);
+                    },
+                    fnCancel:function(dialog,rdm){
+                        dialog.close(rdm);
+                    },
+                    cssClass:'draw_dialog'
+                 });
+                 if(type==1){
+                    optionsTest.marginLeft=40;
+                    optionsTest.marginTop=120;
+                 }else{
+                    optionsTest.marginLeft=260;
+                    optionsTest.marginTop=20;
+                 }
+                 optionsTest.type=type;
+                 optionsTest.index=0;
+                 MZ.draw.render(optionsTest, 'init');
+                
+                
+            }
+            </script>
+            <button onclick="draw(2)">路径分析图（横向）</button>&nbsp;<button onclick="draw(1)">路径分析图（纵向）</button></pre>
+											
+										
+										
+										
+											<dl class="detailList params">
+												<dt class="heading">Parameters:</dt>
+												
+													<dt>
+														<span class="light fixedFont">{Object}</span> <b>options</b>
+														
+													</dt>
+													<dd>结构图参数集合</dd>
+												
+													<dt>
+														<span class="light fixedFont">{String}</span> <b>init</b>
+														
+													</dt>
+													<dd>判断是否第一次初始化</dd>
+												
+											</dl>
+										
+										
+										
+										
+									</li>
+								
+							</ul>
+						</div>
+					</div>
+				</section>
+			
+			
+	<!--
+	#### EVENT DETAILS
+	-->		
+			
+		</article>
+	</div>
+</div>
+
+		<script type="text/javascript">
+			wbos.CssTools.MediaQueryFallBack.LoadCss('../css/screen.css', '../css/handheld.css', 660)
+			codeview.classFilter.Init()
+		</script>
+	</body>
+</html>
+

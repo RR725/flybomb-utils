@@ -4,7 +4,8 @@
   "description": "",
   "main": "./dist/fdutil.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "jsdoc":"cd jsdoc && node createDoc.js"
   },
   "author": "ecofe",
   "license": "ISC",

@@ -1,0 +1,37 @@
+﻿{
+    "code": 200,
+    "message": "",
+    "value": {
+        "data": [{
+            "text": "http://www.sogou.com/sie?hdq=AQxRG-3354&query=12306%CC%FA%C2%B7%BF%CD%BB%A7%B7%FE%CE%F1%D6%D0%D0%C4&p=99350103&sourceid=sugg&w=01015004&oq=123&ri=0",
+            "percent": "50%",
+            "dataid": "123",
+            "type": "fsf"
+        }, {
+            "text": "http://www.meizu.com/products/meilan/fun.html",
+            "percent": "20%",
+            "dataid": "423",
+            "type": "gfgfg"
+        }, {
+            "text": "https://member.meizu.com/sso?appuri=http%3A%2F%2Fwww.meizu.com%2Faccounts%2Flogin&useruri=http%3A%2F%2Fwww.meizu.com%2Fproducts%2Fmeilan%2Ffun.html&sid=&service=www&autodirct=true",
+            "percent": "10%",
+            "dataid": "243",
+            "type": "gdsd"
+        }, {
+            "text": "http://bbs.meizu.cn/thread-5600058-1-1.html",
+            "percent": "5%",
+            "dataid": "453",
+            "type": "few"
+        }, {
+            "text": "http://bbs.flyme.cn/thread-244926-1-1.html",
+            "percent": "3%",
+            "dataid": "564",
+            "type": "hew"
+        }, {
+            "text": "http://retail.meizu.com/join.html",
+            "percent": "2%",
+            "dataid": "985",
+            "type": "gad"
+        }]
+    }
+}
