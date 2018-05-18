@@ -2,9 +2,7 @@
 var path = require("path");
 //把要用jsdoc进行解析的文件拷贝到这个目录下
 
-// var templateDir = __dirname + "/doc_template/";
 var templateDir = path.resolve("doc_template");
-console.log(templateDir);
 //不需要用jsdoc解析的库放到这个目录下
 var libDir = path.resolve("lib");
 
