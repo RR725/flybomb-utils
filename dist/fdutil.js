@@ -120,7 +120,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 1 */
 /***/ (function(module, exports) {
 
-	"use strict";
+	'use strict';
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -129,193 +129,200 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 	var ua = window.navigator.userAgent;
 	var browser = {
-		/**即：navigator.userAgent,browser.ua*/
-		ua: ua,
-		/**
-	  *@namespace
-	  *@name browser.is
+	  /**即：navigator.userAgent,browser.ua*/
+	  ua: ua,
+	  /**
+	   *@namespace
+	   *@name browser.is
+	   */
+	  _is:
+	  /**@lends browser.is*/
+	  {
+	    /**是否IE浏览器
+	     * @field
+	     */
+	    ie: function ie() {
+	      if (!!window.ActiveXObject || 'ActiveXObject' in window) {
+	        return true;
+	      } else {
+	        return false;
+	      }
+	    },
+
+	    /**是否IE6浏览器
+	     * @field
+	     */
+	    ie6: function ie6() {
+	      var ie6 = !-[1] && !window.XMLHttpRequest;
+	      return ie6;
+	    },
+
+	    /**是否IE7浏览器
+	     * @field
+	     */
+	    ie7: function ie7() {
+	      return this.ie && /MSIE 7.0/.test(ua);
+	    },
+
+	    /** 是否IE8浏览器
+	     *@field
+	     */
+	    ie8: function ie8() {
+	      return this.ie && /MSIE 8.0/.test(ua);
+	    },
+
+	    /**是否IE9浏览器
+	     * @field
+	     */
+	    ie9: function ie9() {
+	      return this.ie && /MSIE 9.0/.test(ua);
+	    },
+
+	    /**是否IE10浏览器
+	     * @field
+	     */
+	    ie10: function ie10() {
+	      return this.ie && /MSIE 10.0/.test(ua);
+	    },
+
+	    /**是否IE11浏览器
+	     * @field
+	     */
+	    ie11: function ie11() {
+	      return this.ie && /rv:11.0/.test(ua);
+	    },
+
+	    /**是否Edge浏览器
+	     * @field
+	     */
+	    edge: function edge() {
+	      return ua.indexOf('Edge') > -1;
+	    },
+
+	    /**是否火狐浏览器
+	     * @field
+	     */
+	    firefox: /firefox/i,
+
+	    /**是否是否谷歌浏览器
+	     * @field
+	     */
+	    chrome: /chrome/i,
+
+	    /**是否欧朋浏览器
+	     * @field
+	     */
+	    opera: /opera/i,
+
+	    /**是否苹果的Safari浏览器,如果是Chrome则输出false
+	     * @field
+	     */
+	    safari: /safari/i,
+
+	    /**是否Webkit内核浏览器
+	     * @field
+	     */
+	    webkit: /webkit/i,
+
+	    /**是否Gecko内核浏览器
+	     * @field
+	     */
+	    gecko: /gecko/i,
+
+	    /**是否iOS操作系统
+	     * @field
+	     */
+	    ios: /iPad|iPhone|iPod/,
+
+	    /**是否mac操作系统
+	     * @field
+	     */
+	    mac: /mac/i,
+
+	    /**是否安卓操作系统
+	     * @field
+	     */
+	    android: /Android/,
+
+	    /**是否Windows Phone操作系统
+	     * @field
+	     */
+	    windowsphone: /Windows Phone/,
+
+	    /**是否Windows操作系统
+	     * @field
+	     */
+	    windows: /Windows/,
+
+	    /**是否为手机
+	     * @field
+	     */
+	    phone: /mobile|phone/i,
+
+	    /**是否为iPad设备
+	     * @field
+	     */
+	    ipad: /iPad/,
+
+	    /**是否为Linux操作系统
+	     * @field
+	     */
+	    linux: /Linux/
+	  },
+	  /**@namespace
+	   *@name browser.support
+	   */
+	  _support:
+	  /**@lends browser.support*/
+	  {
+	    /**
+	     * 是否支持本地存储
+	     */
+	    storage: function storage() {
+	      try {
+	        return 'undefined' !== typeof window.localStorage;
+	      } catch (ex) {
+	        return false;
+	      }
+	    }
+	  },
+	  /**
+	  *判断ua是否包含某个关键字,即：browser.ua.indexOf(keyword) > -1，可以一次判断多个值
+	  *@example
+	  browser.uaContains(keyword1,keyword2);
 	  */
-		_is:
-		/**@lends browser.is*/
-		{
-			/**是否IE浏览器
-	   * @field
-	   */
-			ie: function ie() {
-				if (!!window.ActiveXObject || "ActiveXObject" in window) {
-					return true;
-				} else {
-					return false;
-				}
-			},
-
-			/**是否IE6浏览器
-	   * @field
-	   */
-			ie6: function ie6() {
-				var ie6 = !-[1] && !window.XMLHttpRequest;
-				return ie6;
-			},
-
-			/**是否IE7浏览器
-	   * @field
-	   */
-			ie7: function ie7() {
-				return this.ie && /MSIE 7.0/.test(ua);
-			},
-
-			/** 是否IE8浏览器
-	   *@field
-	   */
-			ie8: function ie8() {
-				return this.ie && /MSIE 8.0/.test(ua);
-			},
-
-			/**是否IE9浏览器
-	   * @field
-	   */
-			ie9: function ie9() {
-				return this.ie && /MSIE 9.0/.test(ua);
-			},
-
-			/**是否IE10浏览器
-	   * @field
-	   */
-			ie10: function ie10() {
-				return this.ie && /MSIE 10.0/.test(ua);
-			},
-
-			/**是否IE11浏览器
-	   * @field
-	   */
-			ie11: function ie11() {
-				return this.ie && /rv:11.0/.test(ua);
-			},
-
-			/**是否火狐浏览器
-	   * @field
-	   */
-			firefox: /firefox/i,
-
-			/**是否是否谷歌浏览器
-	   * @field
-	   */
-			chrome: /chrome/i,
-
-			/**是否欧朋浏览器
-	   * @field
-	   */
-			opera: /opera/i,
-
-			/**是否苹果的Safari浏览器,如果是Chrome则输出false
-	   * @field
-	   */
-			safari: /safari/i,
-
-			/**是否Webkit内核浏览器
-	   * @field
-	   */
-			webkit: /webkit/i,
-
-			/**是否Gecko内核浏览器
-	   * @field
-	   */
-			gecko: /gecko/i,
-
-			/**是否iOS操作系统
-	   * @field
-	   */
-			ios: /iPad|iPhone|iPod/,
-
-			/**是否mac操作系统
-	   * @field
-	   */
-			mac: /mac/i,
-
-			/**是否安卓操作系统
-	   * @field
-	   */
-			android: /Android/,
-
-			/**是否Windows Phone操作系统
-	   * @field
-	   */
-			windowsphone: /Windows Phone/,
-
-			/**是否Windows操作系统
-	   * @field
-	   */
-			windows: /Windows/,
-
-			/**是否为手机
-	   * @field
-	   */
-			phone: /mobile|phone/i,
-
-			/**是否为iPad设备
-	   * @field
-	   */
-			ipad: /iPad/,
-
-			/**是否为Linux操作系统
-	   * @field
-	   */
-			linux: /Linux/
-		},
-		/**@namespace
-	  *@name browser.support
+	  uaContains: function uaContains(keyword1, keyword2) {
+	    var result = false;
+	    for (var i = 0; i < arguments.length; i++) {
+	      result = result || this.ua.indexOf(arguments[i]) > -1;
+	    }
+	    return result;
+	  },
+	  /**
+	           
+	  *初始化，给browser.is赋值
 	  */
-		_support:
-		/**@lends browser.support*/
-		{
-			/**
-	   * 是否支持本地存储
-	   */
-			storage: function storage() {
-				try {
-					return "undefined" !== typeof window.localStorage;
-				} catch (ex) {
-					return false;
-				}
-			}
-		},
-		/**
-	    *判断ua是否包含某个关键字,即：browser.ua.indexOf(keyword) > -1，可以一次判断多个值
-	    *@example
-	    browser.uaContains(keyword1,keyword2);
-	    */
-		uaContains: function uaContains(keyword1, keyword2) {
-			var result = false;
-			for (var i = 0; i < arguments.length; i++) {
-				result = result || this.ua.indexOf(arguments[i]) > -1;
-			}
-			return result;
-		},
-		/**
-	             
-	    *初始化，给browser.is赋值
-	    */
-		init: function init() {
-			var is = this.is = {};
-			var _is = this._is;
-			for (var r in _is) {
-				if (_typeof(_is[r]) == "object") {
-					is[r] = _is[r].test(ua);
-				}
-				if (typeof _is[r] == "function") {
-					is[r] = _is[r]();
-				}
-			}
-			is.safari = is.safari && !is.chrome;
+	  init: function init() {
+	    var is = this.is = {};
+	    var _is = this._is;
+	    for (var r in _is) {
+	      if (_typeof(_is[r]) == 'object') {
+	        is[r] = _is[r].test(ua);
+	      }
+	      if (typeof _is[r] == 'function') {
+	        is[r] = _is[r]();
+	      }
+	    }
+	    is.safari = is.safari && !is.chrome;
 
-			var _support = this._support;
-			var support = this.support = {};
-			for (var o in _support) {
-				if (typeof _support[o] == "function") {
-					support[o] = _support[o];
-				}
-			}
-		}
+	    var _support = this._support;
+	    var support = this.support = {};
+	    for (var o in _support) {
+	      if (typeof _support[o] == 'function') {
+	        support[o] = _support[o];
+	      }
+	    }
+	  }
 	};
 	browser.init();
 	module.exports = browser;
@@ -329,26 +336,33 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * @fileOverview 和数组相关的方法.
 	 */
-
-	/***
-	 *数组去重
-	 *@param {Array} arr 数组
-	 *@example
-	 *array.removeRepeat([1,2,3,4,5,1,2])
-	 *@returns {Array}
+	/**
+	 *@namespace
+	 *@name array
 	 */
-	exports.removeRepeat = function (arr) {
-		var obj = {},
-		    array = [],
-		    len = arr.length;
-		for (var i = 0; i < len; i++) {
-			obj[arr[i]] = null;
+	var array = {
+		/***
+	  *数组去重
+	  *@param {Array} arr 数组
+	  *@example
+	  *array.removeRepeat([1,2,3,4,5,1,2])
+	  *@returns {Array}
+	  */
+		removeRepeat: function removeRepeat(arr) {
+			var obj = {},
+			    array = [],
+			    len = arr.length;
+			for (var i = 0; i < len; i++) {
+				obj[arr[i]] = null;
+			}
+			for (var o in obj) {
+				array.push(o);
+			}
+			return array;
 		}
-		for (var o in obj) {
-			array.push(o);
-		}
-		return array;
 	};
+
+	module.exports = array;
 
 /***/ }),
 /* 3 */
@@ -359,8 +373,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * @fileOverview 读取cookie和设置cookie.
 	 */
-
-	module.exports = {
+	/**
+	 *@namespace
+	 *@name cookie
+	 */
+	var cookie = {
 		/**
 	  *读取cookie值
 	  *@returns {String}
@@ -392,6 +409,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			document.cookie = str;
 		}
 	};
+	module.exports = cookie;
 
 /***/ }),
 /* 4 */
@@ -402,7 +420,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * @fileOverview 和日期相关的方法
 	 */
-	module.exports = {
+	/**
+	 *@namespace
+	 *@name date
+	 */
+	var date = {
 		/**
 	            *解析文本为日期对象，目前只支持yyyy-MM-dd hh:mm:ss的写法，解析失败返回null
 	            *@param {String|Number} 要解析的时间文本,"yyyy-MM-dd hh:mm:ss"格式，或者是秒数
@@ -631,6 +653,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			return timeObj;
 		}
 	};
+	module.exports = date;
 
 /***/ }),
 /* 5 */
@@ -641,8 +664,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * @fileOverview 定义和邮件地址相关的方法.
 	 */
-
-	module.exports = {
+	/**
+	 *@namespace
+	 *@name email
+	 */
+	var email = {
 		/**
 	  *获得检测邮件地址的正则表达式(可能来自全局配置)
 	  *@returns {RegExp}
@@ -683,12 +709,13 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		}
 	};
+	module.exports = email;
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _browser = __webpack_require__(1);
 
@@ -696,7 +723,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	module.exports = {
+	/**
+	 *@namespace
+	 *@name events
+	 */
+	var events = {
 		/**
 	  *keycode常量
 	  *@filed
@@ -740,6 +771,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    * @fileOverview 和事件相关的方法.
 	    */
 
+	module.exports = events;
+
 /***/ }),
 /* 7 */
 /***/ (function(module, exports) {
@@ -749,8 +782,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * @fileOverview 对html片断进行转义的方法.
 	 */
-
-	module.exports = {
+	/**
+	 *@namespace
+	 *@name html
+	 */
+	var html = {
 		html_decodes: {
 			"&amp;": "&",
 			"&quot;": '"',
@@ -783,6 +819,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			return text;
 		}
 	};
+	module.exports = html;
 
 /***/ }),
 /* 8 */
@@ -793,8 +830,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * @fileOverview 和input相关的方法.
 	 */
-
-	module.exports = {
+	/**
+	 *@namespace
+	 *@name input
+	 */
+	var input = {
 		/***
 	             *聚焦去掉提示文字，失焦显示提示文字
 	             *@param {Object}   options               参数集合
@@ -947,6 +987,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			return html;
 		}
 	};
+	module.exports = input;
 
 /***/ }),
 /* 9 */
@@ -957,8 +998,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * @fileOverview 定义和手机相关的方法.
 	 */
-
-	module.exports = {
+	/**
+	 *@namespace
+	 *@name mobile
+	 */
+	var mobile = {
 		/***
 	  *获得匹配中国移动手机号的正则(可能来自全局配置)
 	  *@returns {RegExp}
@@ -1009,6 +1053,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			return mobile.trim().replace(/^86(?=\d{11}$)/, "");
 		}
 	};
+	module.exports = mobile;
 
 /***/ }),
 /* 10 */
@@ -1019,8 +1064,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * @fileOverview 和字符串相关的方法.
 	 */
-
-	module.exports = {
+	/**
+	 *@namespace
+	 *@name strings
+	 */
+	var strings = {
 		/***
 	    *获得描述性的文件大小文本，如：传入1124，返回1.1KB
 	    *@param {Number} fileSize 必选参数，文件大小
@@ -1164,6 +1212,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 		}
 	};
+	module.exports = strings;
 
 /***/ }),
 /* 11 */
@@ -1174,8 +1223,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	/**
 	 * @fileOverview 定义对url进行处理的方法
 	 */
-
-	module.exports = {
+	/**
+	 *@namespace
+	 *@name url
+	 */
+	var url = {
 		/**获取Url中的Get参数
 	    *@param {String} key url中的查询参数
 	    *@param {String} url 可选参数，默认是取当前窗口的location.href
@@ -1369,6 +1421,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			return url.replace(/^[^\/]+/, "");
 		}
 	};
+	module.exports = url;
 
 /***/ })
 /******/ ])
